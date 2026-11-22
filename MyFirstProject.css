@@ -1,0 +1,366 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.headerLeft{
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    padding: 22px  30px;
+    border-right: 1px solid #ccc;
+}
+
+.headerAddress{
+    padding: 20px 30px;
+}
+
+.headerAddress h3{
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.headerAddress p{
+    font-size: 60px;
+}
+
+.searchBox{
+    flex-grow: 1;
+    background-color: #f8f8f8;
+    display: flex;
+    border-radius: 15px;
+    border: 1px solid #f4f4f4;
+}
+.searchBox button{
+    padding: 60px;
+    border: none;
+    background-color: transparent;
+}
+.searchBox input{
+    flex-grow: 1;
+    border: none;
+    background-color: transparent;
+}
+.searchBox input:focus{
+    outline: none;
+}
+
+.headerBtn{
+     display: flex;
+     gap: 50px;
+     margin-right: 80px;
+}
+
+.headerBtn button{
+    font-size: 60px;
+    padding: 60px;
+    background-color: transparent;
+    border: none;
+}
+
+.headerBtn button:last-child{
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: rgb(12, 131, 31);
+}
+.bannerSection{
+    margin:50px auto;
+    max-width: 1280;
+    width: 100%;
+}
+
+.bannerSection img{
+    width: 100%;
+    height: auto;     
+    display: block;
+}
+
+.orderBanner{
+    display: flex;
+    justify-content: center;
+    max-width: 5060px;
+    margin: auto;
+}
+
+.orderBannerItems{
+    flex-basis: 28%;
+    margin: 3%;
+}
+
+.orderBannerItems img{
+     width: 1000px;
+     height: 700px;
+     display: block;
+     
+}
+
+.categorySection{
+    max-width: 5560px;
+    flex-wrap: wrap;
+    display: flex;
+    margin: auto;
+    width: 100% ;
+    height: auto;
+    margin: 40px auto;
+    row-gap: 28px; 
+    column-gap: 12px;
+    justify-content: space-between
+}
+
+.categoryItems{
+    flex-basis: 80%;
+
+}
+
+.categoryItems img{
+    width: 100%;
+    height: 100%;
+}
+
+.categoryItems{
+    flex-basis: 45%;
+    flex: 0 0 calc(10% - 12px); 
+    min-width: 100px;
+    text-align: center;
+} 
+
+.headingRow h2{
+    font-size: 22px;
+}
+.headingRow a{
+    color: #328839;
+    font-weight: 600;
+    font-size: 500px;
+    text-decoration: none;
+} 
+
+.productSection {
+    clear: both;
+    display: block;
+    width: 100%;
+    margin-top: 60px;   
+    padding-bottom: 100px;   
+}     
+
+.headingRow{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+
+.headingRow h2{
+    font-size: 22px;
+    font-weight: 600;
+    color: #1f1f1f;
+}
+
+.productSection .headingRow a{
+    color: #328839;
+    font-size: 80px;
+    text-decoration: none;
+    font-weight: 600;
+}
+ 
+.productCart img{
+    width: 600%;
+    height: 70px;
+    object-fit: contain;
+    display: block;
+    margin: auto;
+}
+
+.productCart{
+    width: 180px;
+    text-align: center;
+    margin-top: 500px;
+}
+
+.productSection {
+    clear: both;
+    width: 100%;
+    display: block;
+}
+
+.headingRow h2{
+    font-size: 100px;
+    font-weight: 700;
+    color: #1f1f1f;
+}
+
+.headingRow a{
+    color: #328839;
+    font-size: 18px;
+}
+
+.productRow{
+    width: 100%;
+    margin: 70px 0px 0px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+}
+
+.productItems{
+    flex-basis: 15%;
+    box-shadow: 0px 0px 20px #e5cccc;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+
+.productImg{
+    text-align: center;
+    padding: 15px;
+}
+
+.productImg p{
+    background-color: #f8f8f8;
+    display: flex;
+    padding: 2px;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+    text-align: left;
+}
+
+.productContent{
+    padding: 15px;
+    padding-top: 0%;
+}
+
+.productContent h3{
+    font-size: 55px;
+}
+
+.productContent p{
+    font-size: 50px;
+    text-align: center;
+}
+
+.btn-price-outer{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    width: 100%;
+    padding: 10px 15px;
+    box-sizing: border-box;
+}
+
+.btn-price-outer b{
+    font-size: 70px;
+    color: #1f1f1f;
+    font-weight: 800;
+}
+
+.btn-price-outer button {
+    background-color: #f7fff9;     
+    color: #318638 ;                 
+    border: 1px solid #318638 ;      
+    font-size: 65px ;
+    font-weight: 700;
+    padding: 7px 20px;              
+    border-radius: 12px;            
+    cursor: pointer;
+}
+
+footer {
+    display: block;
+    width: 100%;
+    padding: 120px 0px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* main container */
+ .footer-mid {
+    width: 90% ; 
+    max-width: 2400px; 
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-betweent;
+    gap: 150px; 
+}
+
+/* Width of both large sections */
+ .footer-left, 
+ .footer-right {
+    flex: 1;
+    width: 50%;
+}
+
+/* 3-3 equal grid columns */
+ .links-grid, 
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 50px; 
+    width: 100%;
+}
+
+ .links-grid ul, 
+ .categories-grid ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Size of main headings (to Blinkit scale) */
+ .footer-left h2, 
+ .category-header h2 {
+    font-size: 80px ; 
+    font-weight: 700;
+    color: #000000 ;
+    margin: 0 0 40px 0;
+}
+
+/* gap between list items */
+footer ul li {
+    margin-bottom: 28px; 
+}
+
+/* Original large text size of links */
+footer ul li a {
+    text-decoration: none;
+    color: #777777; 
+    font-size: 60px; 
+    display: inline-block;
+    line-height: 1.4;
+    white-space: nowrap;
+}
+
+/* Categories header and see all alignment */
+ .category-header {
+    display: flex;
+    align-items: center;
+    gap: 25px; 
+    margin-bottom: 40px;
+}
+
+ .category-header h2 {
+    margin: 0;
+}
+
+/* see all text styles */
+ .see-all {
+    color: #328839;
+    text-decoration: none;
+    font-size: 40px; 
+    font-weight: 600;
+}
